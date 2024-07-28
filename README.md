@@ -13,8 +13,8 @@ nmap $IP -sC -sV -oN nmap_scan
 ftp $IP
 
 # Logging in to ftp we see a zip file. Let's download it to our machine and play with it.
-ls
-get hackme.zip
+ls \n
+get hackme.zip \n
 quit
 
 # If we now do an "ls" on our machine we should see the zip file. Let's try and unzip it.
